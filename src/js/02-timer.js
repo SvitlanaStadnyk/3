@@ -41,6 +41,7 @@ flatpickr(inputRef, options);
 
 const onStartClock = evt => {
   evt.preventDefault();
+
   let intervalId = setInterval(() => {
     const time = new Date(inputRef.value).getTime() - Date.now();
     if (time <= 0) {
